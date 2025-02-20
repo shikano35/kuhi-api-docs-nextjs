@@ -10,7 +10,8 @@
     "format": "biome format --write .",
     "format:check": "biome check --write .",
     "check": "biome check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest"
   },
   "dependencies": {
     "next": "15.1.7",
@@ -19,13 +20,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "husky": "^9.1.7",
+    "jsdom": "^26.0.0",
     "lint-staged": "^15.4.3",
     "sass": "^1.85.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.6"
   },
   "lint-staged": {
     "**.{ts|tsx|json|scss}": [
