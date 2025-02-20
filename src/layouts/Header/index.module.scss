@@ -1,0 +1,8 @@
+@use "@/styles/index" as *;
+
+.h1{
+  font-size: 3rem;
+  color: $foreground;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
