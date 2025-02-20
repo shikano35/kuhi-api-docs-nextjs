@@ -11,7 +11,9 @@
     "format:check": "biome check --write .",
     "check": "biome check",
     "prepare": "husky",
-    "test": "vitest"
+    "test": "vitest",
+    "sb": "storybook dev -p 6006",
+    "build:sb": "storybook build"
   },
   "dependencies": {
     "next": "15.1.7",
@@ -20,6 +22,15 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.8",
+    "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-links": "^8.5.8",
+    "@storybook/addon-onboarding": "^8.5.8",
+    "@storybook/blocks": "^8.5.8",
+    "@storybook/nextjs": "^8.5.8",
+    "@storybook/react": "^8.5.8",
+    "@storybook/test": "^8.5.8",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
@@ -30,6 +41,7 @@
     "jsdom": "^26.0.0",
     "lint-staged": "^15.4.3",
     "sass": "^1.85.0",
+    "storybook": "^8.5.8",
     "typescript": "^5",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.6"
