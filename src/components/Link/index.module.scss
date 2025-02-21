@@ -1,8 +1,18 @@
+@use "@/styles/index" as *;
+
 .link {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: $muted-foreground;
+
   &:hover {
-    color: red;
+      color: $primary;
   }
+}
+
+.icon {
+  height: 1rem;
+  margin-left: 0.5rem;
 }
