@@ -5,7 +5,7 @@ export const navItems: NavItemProps[] = [
   {
     title: "Home",
     label: "概要",
-    href: "/",
+    href: "#overview",
   },
   {
     title: "API Reference",
