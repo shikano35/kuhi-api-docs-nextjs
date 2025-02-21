@@ -30,7 +30,7 @@ export function NavList() {
       <ul className={styles.navlist__list}>
         {navItems.map((item) => (
           <li key={item.title} className={styles.navlist__item}>
-          <NavItem title={item.title} label={item.label} href={item.href} />
+            <NavItem title={item.title} label={item.label} href={item.href} />
           </li>
         ))}
       </ul>

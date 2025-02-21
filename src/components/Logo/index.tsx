@@ -3,8 +3,8 @@ import styles from "./index.module.scss";
 
 type LogoProps = Omit<ImageProps, "src" | "alt">;
 
-export function Logo({className, ...props}: LogoProps) {
-  return(
+export function Logo({ className, ...props }: LogoProps) {
+  return (
     <Image
       src="/logo.svg"
       alt="Kuhi API Logo"

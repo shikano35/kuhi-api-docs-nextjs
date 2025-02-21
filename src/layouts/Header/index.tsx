@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Roboto_Slab }from 'next/font/google'
+import { Roboto_Slab } from 'next/font/google'
 import styles from './index.module.scss';
 import { ExternalLink } from '@/components/Link';
 
