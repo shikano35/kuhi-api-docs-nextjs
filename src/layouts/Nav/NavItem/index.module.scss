@@ -1,0 +1,23 @@
+@use "@/styles/index" as *;
+
+.navitem {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  color: $muted-foreground;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &.active {
+    color: $primary;
+  }
+  
+  &__text {
+    font-size: 0.8rem;
+    font-weight: normal;
+  
+    @include media(md) {
+      font-size: 0.875rem;
+    }
+  }
+}
