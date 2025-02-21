@@ -1,11 +1,9 @@
-import styles from "./page.module.scss";
+import styles from "./index.module.scss";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <p>
-        HomePage
-      </p>
+      HomePage
     </div>
   );
 }

@@ -1,0 +1,18 @@
+@use "@/styles/index" as *;
+
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: $muted-foreground;
+
+  &:hover {
+      color: $primary;
+  }
+}
+
+.icon {
+  height: 1rem;
+  margin-left: 0.5rem;
+}

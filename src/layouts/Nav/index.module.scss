@@ -1,0 +1,36 @@
+@use "@/styles/index" as *;
+
+.navlist {  
+  position: sticky;
+  top: 0;
+  background-color: $background;
+  border-bottom: 1px solid $border;
+  margin: 0;
+  margin-top: 0.5rem;
+
+  @include media(sm) {
+    padding: 0.1rem 0;
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.125rem;
+    margin: 0;
+    padding: 0;
+
+    @include media(sm) {
+      gap: 0.25rem;
+      margin-left: 1rem;
+    }
+
+    @include media(lg) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__item {
+    margin: 0;
+  }
+}
