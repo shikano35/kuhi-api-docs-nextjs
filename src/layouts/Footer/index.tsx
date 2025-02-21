@@ -15,11 +15,11 @@ export function Footer() {
       <Link href="/" className={styles.footer__title} aria-label="ホームページ">
         <span className={robotoSlab.className}>HaikuMonument API</span>
       </Link>
-      <p>句碑APIは、句碑のデータを提供するAPIです。</p>
+      <p>このAPIは、句碑の情報を提供します</p>
       <small className={styles.footer__copyright}>
           &copy; {currentYear}{" "}
           <a href="https://github.com/shikano35" className={styles.footer__copyright__link} target="_blank" rel="noopener noreferrer">
-            Shikano35
+            shikano35
           </a>
         </small>
       </div>
