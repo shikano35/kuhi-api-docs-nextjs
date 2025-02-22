@@ -1,0 +1,78 @@
+@use "@/styles/index" as *;
+
+.changelog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 4rem 0;
+
+  @include media(md) {
+    padding: 12rem 0;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $primary;
+    
+      @include media(sm) {
+        font-size: 2.25rem;
+      }
+    }
+
+    &__subtitle {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $primary;
+    
+      @include media(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+
+    @include media(md) {
+      margin: 0;
+    }
+
+    &__item {
+      display: flex;
+      align-items: baseline;
+      padding: 1rem 0;
+      width: 100%;
+      border-bottom: 1px solid $border;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__date {
+      color: $muted-foreground;
+      margin-right: 1rem;
+    }
+
+    &__description {
+      color: $muted-foreground;
+      font-size: 0.95rem;
+      line-height: 2;
+    
+      @include media(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

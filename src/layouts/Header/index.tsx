@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Roboto_Slab }from 'next/font/google'
+import { Roboto_Slab } from 'next/font/google'
 import styles from './index.module.scss';
 import { ExternalLink } from '@/components/Link';
 
@@ -12,7 +12,7 @@ export function Header() {
         <Link href="/" className={styles.header__title} aria-label="ホームページ">
           <span className={robotoSlab.className}>HaikuMonument API</span>
         </Link>
-        <ExternalLink href="https://api.kuhi.jp/docs" label="Swagger documents" />
+        <ExternalLink href="https://api.kuhiapi.com/docs" label="Swagger documents" />
       </div>
     </header>
   );
