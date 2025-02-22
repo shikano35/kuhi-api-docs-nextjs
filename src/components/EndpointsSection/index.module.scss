@@ -1,0 +1,91 @@
+@use "@/styles/index" as *;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 640px) { @content; }
+  }
+  @if $breakpoint == md {
+    @media (min-width: 768px) { @content; }
+  }
+}
+
+@mixin method-style($color) {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color;
+  margin-right: 0.5rem;
+
+  @include media(md) {
+    font-size: 1.35rem;
+  }
+}
+
+.endpointSection {
+  padding: 1.5rem 0;
+}
+
+.endpointTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $primary;
+  margin: 0.875rem 0;
+
+  @include media(md) {
+    font-size: 1.5rem;
+  }
+}
+
+.endpointList {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  gap: 1rem;
+
+  @include media(md) {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+.endpointItem {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.endpointItemInner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.endpointPath {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $primary;
+  margin-left: 0.5rem;
+
+  @include media(md) {
+    font-size: 1.25rem;
+  }
+}
+
+.endpointDescription {
+  font-size: 0.875rem;
+  font-weight: 350;
+  color: $muted-foreground;
+  line-height: 1.5;
+}
+
+.methodGet {
+  @include method-style($get);
+}
+
+.methodPost {
+  @include method-style($post);
+}
+
+.methodPut {
+  @include method-style($put);
+}
+
+.methodDelete {
+  @include method-style($delete);
+}
