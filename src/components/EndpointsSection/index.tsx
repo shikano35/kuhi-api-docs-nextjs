@@ -3,18 +3,18 @@ import styles from "./index.module.scss";
 
 export type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
 
-export interface Endpoint {
+export type Endpoint = {
   endpoint: string;
   method: HttpMethod;
   description: string;
 }
 
-export interface EndpointsSectionProps {
+export type EndpointsSectionProps = {
   title: string;
   endpoints: Endpoint[];
 }
 
-const EndpointItem: React.FC<Endpoint> = ({ method, endpoint, description }) => {
+function EndpointItem({ method, endpoint, description }: Endpoint) {
   const methodClass = (() => {
     switch (method) {
       case "GET":
@@ -54,5 +54,3 @@ export function EndpointsSection({ title, endpoints }: EndpointsSectionProps) {
     </section>
   );
 };
-
-export default EndpointsSection;

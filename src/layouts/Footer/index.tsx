@@ -17,10 +17,7 @@ export function Footer() {
           </Link>
           <p>このAPIは、句碑の情報を提供します</p>
           <small className={styles.footer__copyright}>
-            &copy; {currentYear}{" "}
-            <a href="https://github.com/shikano35" className={styles.footer__copyright__link} target="_blank" rel="noopener noreferrer">
-              shikano35
-            </a>
+            &copy; {currentYear} shikano
           </small>
         </div>
         <nav className={styles.footer__navlist} aria-label="Footer Navigation">
