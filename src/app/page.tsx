@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import { BuildingLibraryIcon, UserIcon, MapPinIcon, BookOpenIcon } from "@heroicons/react/24/outline";
 import { EndpointsSection } from "@/components/EndpointsSection";
 import { haikuMonuments, poets, locations, sources } from "@/lib/data";
+import { ChangelogSection } from "@/components/ChangelogSection";
 
 const apiList = [
   {
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
       </section>
       <div className={styles.border} />
-      <section id="overview" className={styles.section__overview}>
+      <section className={styles.section__overview} id="overview">
         <div className={styles.section__overview__inner}>
           <h2 className={styles.section__overview__title}>Overview</h2>
           <small className={styles.section__overview__subtitle}>概要</small>
@@ -88,34 +89,8 @@ export default function Home() {
         <EndpointsSection title="/sources" endpoints={sources} />
       </section>
       <div className={styles.border} />
-      <section className={styles.section__changelog} id="changelog">
-        <div className={styles.section__changelog__inner}>
-          <h2 className={styles.section__changelog__title}>Changelog</h2>
-          <small className={styles.section__changelog__subtitle}>変更履歴</small>
-        </div>
-        <p className={styles.section__changelog__description}>
-          このAPIの変更履歴は、
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.changelogLink}
-          >
-            GitHub
-          </a>
-          で管理しています
-        </p>
-      </section>
+      <ChangelogSection />
       <div className={styles.border} />
-      <section className={styles.section__example} id="example">
-        <div className={styles.section__example__inner}>
-          <h2 className={styles.section__example__title}>Example</h2>
-          <small className={styles.section__example__subtitle}>使用例</small>
-        </div>
-        <p className={styles.section__example__description}>
-          以下は、APIの使用例です
-        </p>
-      </section>
     </div>
   );
 }

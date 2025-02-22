@@ -1,14 +1,5 @@
 @use "@/styles/index" as *;
 
-@mixin media($breakpoint) {
-  @if $breakpoint == sm {
-    @media (min-width: 640px) { @content; }
-  }
-  @if $breakpoint == md {
-    @media (min-width: 768px) { @content; }
-  }
-}
-
 @mixin method-style($color) {
   font-size: 1.25rem;
   font-weight: 700;
@@ -21,7 +12,7 @@
 }
 
 .endpointSection {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .endpointTitle {
@@ -47,7 +38,7 @@
 
 .endpointItem {
   list-style: none;
-  padding: 1rem 0;
+  padding: 0.875rem 0;
 }
 
 .endpointItemInner {
