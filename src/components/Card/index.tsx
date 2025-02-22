@@ -3,12 +3,10 @@ import styles from './index.module.scss';
 export function Card({
   title,
   description,
-  href,
   icon: Icon,
 }: {
   title: string;
   description: string;
-  href: string;
   icon: React.FC<React.SVGProps<SVGSVGElement>>;
 }) {
   return (

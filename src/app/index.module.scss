@@ -8,6 +8,17 @@
   border-top: 1px solid $border;
 }
 
+.swaggerLink {
+  color:$swagger;
+  font-weight: 520;
+  transition: color 0.2s ease;
+  margin-right : 0.25rem;
+  
+  &:hover {
+    color:teal;
+  }
+}
+
 .section__pagetitle {
   padding-top: 8rem;
   padding-bottom: 14rem;
@@ -74,7 +85,7 @@
 
   &__description {
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 350;
     color: $muted-foreground;
     margin-top: 1rem;
     line-height: 2;
@@ -88,6 +99,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+
   }
 
   &__item {
@@ -104,7 +116,7 @@
 
   &__inner {
     text-align: start;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   &__title {
@@ -121,6 +133,17 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: $primary;
+
+    @include media(sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    font-weight: 350;
+    color: $muted-foreground;
+    line-height: 2;
 
     @include media(sm) {
       font-size: 1rem;
