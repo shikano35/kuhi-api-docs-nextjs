@@ -54,6 +54,11 @@ export const poets: Endpoint[] = [
   //   method: "DELETE",
   //   description: "俳人の情報を削除します",
   // },
+  {
+    endpoint: "/poets/{id}/haiku-monuments",
+    method: "GET",
+    description: "俳人に関連する句碑の一覧を取得します",
+  },
 ];
 
 export const locations: Endpoint[] = [
@@ -82,6 +87,11 @@ export const locations: Endpoint[] = [
   //   method: "DELETE",
   //   description: "句碑の設置場所の情報を削除します",
   // },
+  {
+    endpoint: "/locations/{id}/haiku-monuments",
+    method: "GET",
+    description: "設置場所に関連する句碑の一覧を取得します",
+  },
 ];
 
 export const sources: Endpoint[] = [
@@ -110,4 +120,9 @@ export const sources: Endpoint[] = [
   //   method: "DELETE",
   //   description: "句碑の情報の出典情報を削除します",
   // },
+  {
+    endpoint: "/sources/{id}/haiku-monuments",
+    method: "GET",
+    description: "出典に関連する句碑の一覧を取得します",
+  },
 ];
