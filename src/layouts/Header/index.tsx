@@ -19,6 +19,7 @@ export function Header() {
         <ExternalLink
           href="https://api.kuhiapi.com/docs"
           label="Swagger UI documents"
+          target={false}
         />
       </div>
     </header>
