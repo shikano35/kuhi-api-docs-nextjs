@@ -1,4 +1,4 @@
-import type { Endpoint } from "@/components/EndpointsSection";
+import type { Endpoint } from "@/components/Section/EndpointsSection";
 
 export const haikuMonuments: Endpoint[] = [
   {

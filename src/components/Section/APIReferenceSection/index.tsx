@@ -1,4 +1,4 @@
-import { EndpointsSection } from "@/components/EndpointsSection";
+import { EndpointsSection } from "@/components/Section/EndpointsSection";
 import { haikuMonuments, poets, locations, sources } from "@/lib/data";
 import styles from "./index.module.scss";
 
