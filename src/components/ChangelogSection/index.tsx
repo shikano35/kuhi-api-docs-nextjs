@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.scss";
 
 export type ChangelogEntry = {
@@ -15,25 +14,33 @@ const changelogEntries: ChangelogEntry[] = [
 
 export function ChangelogItem({ date, description }: ChangelogEntry) {
   return (
-    <div className={styles.changelog__content__item}>
-      <time className={styles.changelog__content__date}>{date}</time>
+    <li className={styles.changelog__content__item}>
+      <time className={styles.changelog__content__date} dateTime={date}>
+        {date}
+      </time>
       <p className={styles.changelog__content__description}>{description}</p>
-    </div>
+    </li>
   );
 };
 
 export function ChangelogSection() {
   return (
-    <section className={styles.changelog} id="changelog">
+    <section
+      className={styles.changelog}
+      id="changelog"
+      aria-labelledby="changelog-title"
+    >
       <header className={styles.changelog__header}>
-        <h2 className={styles.changelog__header__title}>Changelog</h2>
+        <h2 id="changelog-title" className={styles.changelog__header__title}>
+          Changelog
+        </h2>
         <small className={styles.changelog__header__subtitle}>変更履歴</small>
       </header>
-      <div className={styles.changelog__content}>
+      <ul className={styles.changelog__content}>
         {changelogEntries.map((entry, index) => (
           <ChangelogItem key={index} {...entry} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

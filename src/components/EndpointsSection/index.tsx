@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./index.module.scss";
 
 export type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
@@ -45,7 +44,6 @@ export function EndpointsSection({ title, endpoints }: EndpointsSectionProps) {
   return (
     <section className={styles.endpointSection}>
       <h2 className={styles.endpointTitle}>{title}</h2>
-      <div className={styles.border} />
       <ul className={styles.endpointList}>
         {endpoints.map((ep, index) => (
           <EndpointItem key={index} {...ep} />
