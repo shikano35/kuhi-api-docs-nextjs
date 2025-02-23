@@ -1,10 +1,10 @@
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 export type CardProps = {
   title: string;
   description: string;
   icon: React.FC<React.SVGProps<SVGSVGElement>>;
-}
+};
 
 export function Card({ title, description, icon: Icon }: CardProps) {
   return (

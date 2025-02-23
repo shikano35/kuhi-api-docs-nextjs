@@ -6,12 +6,12 @@ export type Endpoint = {
   endpoint: string;
   method: HttpMethod;
   description: string;
-}
+};
 
 export type EndpointsSectionProps = {
   title: string;
   endpoints: Endpoint[];
-}
+};
 
 function EndpointItem({ method, endpoint, description }: Endpoint) {
   const methodClass = (() => {
@@ -38,7 +38,7 @@ function EndpointItem({ method, endpoint, description }: Endpoint) {
       <p className={styles.endpointDescription}>{description}</p>
     </li>
   );
-};
+}
 
 export function EndpointsSection({ title, endpoints }: EndpointsSectionProps) {
   return (
@@ -51,4 +51,4 @@ export function EndpointsSection({ title, endpoints }: EndpointsSectionProps) {
       </ul>
     </section>
   );
-};
+}

@@ -3,13 +3,13 @@ import styles from "./index.module.scss";
 export type ChangelogEntry = {
   date: string;
   description: string;
-}
+};
 
 const changelogEntries: ChangelogEntry[] = [
   {
     date: "2025-02-22",
-    description: "APIの提供を開始しました"
-  }
+    description: "APIの提供を開始しました",
+  },
 ];
 
 export function ChangelogItem({ date, description }: ChangelogEntry) {
@@ -21,7 +21,7 @@ export function ChangelogItem({ date, description }: ChangelogEntry) {
       <p className={styles.changelog__content__description}>{description}</p>
     </li>
   );
-};
+}
 
 export function ChangelogSection() {
   return (
@@ -43,4 +43,4 @@ export function ChangelogSection() {
       </ul>
     </section>
   );
-};
+}

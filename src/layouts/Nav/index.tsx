@@ -1,5 +1,5 @@
 import { NavItem, NavItemProps } from "./NavItem";
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 export const navItems: NavItemProps[] = [
   {

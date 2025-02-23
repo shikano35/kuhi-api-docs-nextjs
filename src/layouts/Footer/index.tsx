@@ -1,18 +1,25 @@
 import Link from "next/link";
-import { Roboto_Slab } from 'next/font/google'
+import { Roboto_Slab } from "next/font/google";
 import styles from "./index.module.scss";
 import { navItems } from "../Nav";
 import { NavItem } from "../Nav/NavItem";
 
-const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__inner}>
-        <section className={styles.footer__description} aria-labelledby="footer-title">
-          <Link href="/" aria-label="ホームページ" className={styles.footer__title}>
+        <section
+          className={styles.footer__description}
+          aria-labelledby="footer-title"
+        >
+          <Link
+            href="/"
+            aria-label="ホームページ"
+            className={styles.footer__title}
+          >
             <h2 id="footer-title" className={robotoSlab.className}>
               HaikuMonument API
             </h2>
@@ -26,7 +33,11 @@ export function Footer() {
           <ul className={styles.footer__navlist__list}>
             {navItems.map((item) => (
               <li key={item.title} className={styles.footer__navlist__item}>
-                <NavItem title={item.title} label={item.label} href={item.href} />
+                <NavItem
+                  title={item.title}
+                  label={item.label}
+                  href={item.href}
+                />
               </li>
             ))}
           </ul>
