@@ -14,6 +14,7 @@ export type ExternalLinkProps = {
   label: string;
   className?: string;
   ariaLabel?: string;
+  target?: boolean;
 };
 
 export function InternalLink({ href, label, className }: InternalLinkProps) {
@@ -30,11 +31,12 @@ export function ExternalLink({
   label,
   className,
   ariaLabel,
+  target,
 }: ExternalLinkProps) {
   return (
     <a
       href={href}
-      target="_blank"
+      target={target ? "_blank" : undefined}
       rel="noopener noreferrer"
       className={clsx(styles.link, className)}
       aria-label={ariaLabel || label}
