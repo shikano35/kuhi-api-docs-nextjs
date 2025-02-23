@@ -1,11 +1,11 @@
 import { NavItem, NavItemProps } from "./NavItem";
-import styles from './index.module.scss';
+import styles from "./index.module.scss";
 
 export const navItems: NavItemProps[] = [
   {
     title: "Home",
     label: "概要",
-    href: "/",
+    href: "#overview",
   },
   {
     title: "API Reference",
@@ -17,11 +17,11 @@ export const navItems: NavItemProps[] = [
     label: "変更履歴",
     href: "#changelog",
   },
-  {
-    title: "Example",
-    label: "使用例",
-    href: "#example",
-  },
+  // {
+  //   title: "Example",
+  //   label: "使用例",
+  //   href: "#example",
+  // },
 ];
 
 export function NavList() {
@@ -30,7 +30,7 @@ export function NavList() {
       <ul className={styles.navlist__list}>
         {navItems.map((item) => (
           <li key={item.title} className={styles.navlist__item}>
-          <NavItem title={item.title} label={item.label} href={item.href} />
+            <NavItem title={item.title} label={item.label} href={item.href} />
           </li>
         ))}
       </ul>

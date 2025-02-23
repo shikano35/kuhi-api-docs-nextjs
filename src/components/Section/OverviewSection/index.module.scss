@@ -1,0 +1,53 @@
+@use "@/styles/index" as *;
+
+.destructive {
+  color: $destructive;
+}
+
+.overview {
+  padding: 4rem 0;
+
+  &__inner {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $primary;
+      @include media(sm) {
+        font-size: 2.25rem;
+      }
+    }
+  
+    &__subtitle {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $primary;
+      @include media(sm) {
+        font-size: 1rem;
+      }
+    }
+  
+    &__description {
+      font-size: 0.9rem;
+      font-weight: 350;
+      color: $muted-foreground;
+      margin-top: 1rem;
+      line-height: 2;
+      @include media(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+}

@@ -1,0 +1,11 @@
+@use "@/styles/index" as *;
+
+.layout {
+  flex-grow: 1;
+}
+
+.border {
+  border: none;
+  height: 1px;
+  background-color: $border;
+}
