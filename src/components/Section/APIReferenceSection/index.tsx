@@ -8,7 +8,9 @@ export default function APIReferenceSection() {
       <div className={styles.apiReference__inner}>
         <header>
           <h2 className={styles.apiReference__inner__title}>API Reference</h2>
-          <p className={styles.apiReference__inner__subtitle}>APIリファレンス</p>
+          <p className={styles.apiReference__inner__subtitle}>
+            APIリファレンス
+          </p>
         </header>
       </div>
       <p className={styles.apiReference__inner__description}>

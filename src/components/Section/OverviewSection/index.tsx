@@ -16,8 +16,7 @@ const apiList = [
   },
   {
     title: "俳人",
-    description:
-      "句碑に刻まれた俳句から、俳人の情報を取得することができます",
+    description: "句碑に刻まれた俳句から、俳人の情報を取得することができます",
     item: UserIcon,
   },
   {
