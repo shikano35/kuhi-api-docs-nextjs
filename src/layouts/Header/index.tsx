@@ -12,7 +12,7 @@ export function Header() {
         <Link href="/" className={styles.header__title} aria-label="ホームページ">
           <span className={robotoSlab.className}>HaikuMonument API</span>
         </Link>
-        <ExternalLink href="https://api.kuhiapi.com/docs" label="Swagger documents" />
+        <ExternalLink href="https://api.kuhiapi.com/docs" label="Swagger UI documents" />
       </div>
     </header>
   );

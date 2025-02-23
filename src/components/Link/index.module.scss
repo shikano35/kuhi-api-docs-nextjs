@@ -6,9 +6,10 @@
   font-size: 0.8rem;
   font-weight: normal;
   color: $muted-foreground;
+  text-decoration: none;
 
   &:hover {
-      color: $primary;
+    color: $primary;
   }
 }
 

@@ -3,15 +3,20 @@ import styles from "./index.module.scss";
 import clsx from "clsx";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
-export function InternalLink({
-  href,
-  label,
-  className,
-}: {
+export type InternalLinkProps = {
   href: string;
   label: string;
   className?: string;
-}) {
+}
+
+export type ExternalLinkProps = {
+  href: string;
+  label: string;
+  className?: string;
+  ariaLabel?: string;
+}
+
+export function InternalLink({ href, label, className }: InternalLinkProps) {
   return (
     <Link href={href} className={clsx(styles.link, className)}>
       <span>{label}</span>
@@ -25,12 +30,7 @@ export function ExternalLink({
   label,
   className,
   ariaLabel,
-}: {
-  href: string;
-  label: string;
-  className?: string;
-  ariaLabel?: string;
-}) {
+}: ExternalLinkProps) {
   return (
     <a
       href={href}
