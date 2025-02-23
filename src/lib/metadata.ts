@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const basedata: Metadata = {
+export const baseMetadata: Metadata = {
   title: "句碑API",
   description: "句碑の情報をAPIとして提供します。",
   keywords: "句碑API, HaikuMonument-Api, haiku-monument, kuhi-api, kuhi, 句碑",

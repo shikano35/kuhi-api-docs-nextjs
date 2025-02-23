@@ -3,12 +3,12 @@ import { Inter, Noto_Sans_JP } from "next/font/google";
 import "../styles/globals.scss";
 import { Layout } from "@/layouts";
 import clsx from "clsx";
-import { basedata } from "@/lib/metadata";
+import { baseMetadata } from "@/lib/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
-export const metadata = basedata;
+export const metadata = baseMetadata;
 
 export default function RootLayout({
   children,
