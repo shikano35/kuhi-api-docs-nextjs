@@ -7,9 +7,7 @@ export default function PageTitleSection() {
         <h1 className={styles.pageTitle__title}>
           HaikuMonument API Documentation
         </h1>
-        <p className={styles.pageTitle__subtitle}>
-          句碑API ドキュメント
-        </p>
+        <p className={styles.pageTitle__subtitle}>句碑API ドキュメント</p>
       </header>
     </section>
   );

@@ -13,7 +13,11 @@
     "prepare": "husky",
     "test": "vitest",
     "sb": "storybook dev -p 6006",
-    "build:sb": "storybook build"
+    "build:sb": "storybook build",
+    "build:worker": "opennextjs-cloudflare",
+    "dev:worker": "wrangler dev --port 8771",
+    "preview:worker": "pnpm run build:worker && pnpm run dev:worker",
+    "deploy:worker": "pnpm run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -25,6 +29,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@chromatic-com/storybook": "^3.2.4",
+    "@opennextjs/cloudflare": "^0.5.3",
     "@storybook/addon-essentials": "^8.5.8",
     "@storybook/addon-interactions": "^8.5.8",
     "@storybook/addon-links": "^8.5.8",
