@@ -3,10 +3,14 @@
 .link {
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: normal;
   color: $muted-foreground;
   text-decoration: none;
+
+  @include media(sm) {
+    font-size: 0.8rem;
+  }
 
   &:hover {
     color: $primary;
@@ -14,6 +18,10 @@
 }
 
 .icon {
-  height: 1rem;
+  height: 0.9rem;
   margin-left: 0.5rem;
+
+  @include media(sm) {
+    height: 1rem;
+  }
 }
