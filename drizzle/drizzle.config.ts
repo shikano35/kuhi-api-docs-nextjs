@@ -5,7 +5,6 @@ export default defineConfig({
   schema: join(__dirname, "schema.ts"),
   out: join(__dirname, "migrations"),
   dialect: "postgresql",
-  driver: "pglite",
   dbCredentials: {
     url: process.env.DATABASE_URL || "",
   },
