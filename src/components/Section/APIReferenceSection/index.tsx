@@ -27,10 +27,10 @@ export default function APIReferenceSection() {
         </a>
         をご参照ください
       </p>
-      <EndpointsSection id="section-1" title="/haiku-monuments" endpoints={haikuMonuments} />
-      <EndpointsSection id="section-2" title="/poets" endpoints={poets} />
-      <EndpointsSection id="section-3" title="/locations" endpoints={locations} />
-      <EndpointsSection id="section-4" title="/sources" endpoints={sources} />
+      <EndpointsSection id="endpoint" title="/haiku-monuments" endpoints={haikuMonuments} />
+      <EndpointsSection id="endpoint" title="/poets" endpoints={poets} />
+      <EndpointsSection id="endpoint" title="/locations" endpoints={locations} />
+      <EndpointsSection id="endpoint" title="/sources" endpoints={sources} />
     </section>
   );
 }

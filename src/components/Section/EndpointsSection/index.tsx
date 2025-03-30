@@ -47,7 +47,7 @@ export function EndpointsSection({ id, title, endpoints }: EndpointsSectionProps
       <h2 className={styles.endpointTitle}>{title}</h2>
       <ul className={styles.endpointList}>
         {endpoints.map((ep) => (
-          <EndpointItem key={id} {...ep} />
+          <EndpointItem key={`${id}-${ep.endpoint}`} {...ep} />
         ))}
       </ul>
     </section>
