@@ -31,3 +31,21 @@
     }
   }
 }
+
+.button {
+  background-color: $highlight;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: semibold;
+  transition: all 0.2s ease-in-out;
+  color: $primary-foreground;
+
+  &:hover {
+    background-color: $highlight;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
