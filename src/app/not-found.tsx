@@ -1,6 +1,6 @@
 import { NotFoundPage } from "@/layouts/NotFound";
 import { baseMetadata } from "@/lib/metadata";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   ...baseMetadata,

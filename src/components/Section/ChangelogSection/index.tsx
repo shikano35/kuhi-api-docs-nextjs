@@ -1,12 +1,14 @@
 import styles from "./index.module.scss";
 
 export type ChangelogEntry = {
+  id: string;
   date: string;
   description: string;
 };
 
 const changelogEntries: ChangelogEntry[] = [
   {
+    id: "entry-1",
     date: "2025-02-22",
     description: "APIの提供を開始しました",
   },
@@ -37,8 +39,8 @@ export function ChangelogSection() {
         <small className={styles.changelog__header__subtitle}>変更履歴</small>
       </header>
       <ul className={styles.changelog__content}>
-        {changelogEntries.map((entry, index) => (
-          <ChangelogItem key={index} {...entry} />
+        {changelogEntries.map((entry) => (
+          <ChangelogItem key={entry.id} {...entry} />
         ))}
       </ul>
     </section>
