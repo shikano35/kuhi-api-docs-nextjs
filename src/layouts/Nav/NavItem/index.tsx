@@ -23,7 +23,7 @@ export function NavItem({ title, label, href }: NavItemProps) {
       href={href}
       aria-current={isActive ? "page" : undefined}
       className={clsx(styles.navitem, { [styles.active]: isActive })}
-      title="title"
+      title={title}
     >
       <span className={styles.navitem__text}>{label}</span>
     </Link>

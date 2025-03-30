@@ -9,6 +9,7 @@ export type Endpoint = {
 };
 
 export type EndpointsSectionProps = {
+  id: string;
   title: string;
   endpoints: Endpoint[];
 };
@@ -40,13 +41,13 @@ function EndpointItem({ method, endpoint, description }: Endpoint) {
   );
 }
 
-export function EndpointsSection({ title, endpoints }: EndpointsSectionProps) {
+export function EndpointsSection({ id, title, endpoints }: EndpointsSectionProps) {
   return (
     <section className={styles.endpointSection}>
       <h2 className={styles.endpointTitle}>{title}</h2>
       <ul className={styles.endpointList}>
-        {endpoints.map((ep, index) => (
-          <EndpointItem key={index} {...ep} />
+        {endpoints.map((ep) => (
+          <EndpointItem key={id} {...ep} />
         ))}
       </ul>
     </section>

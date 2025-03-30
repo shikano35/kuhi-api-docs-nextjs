@@ -1,4 +1,5 @@
-import { NavItem, NavItemProps } from "./NavItem";
+import type { NavItemProps } from "./NavItem";
+import { NavItem } from "./NavItem";
 import styles from "./index.module.scss";
 
 export const navItems: NavItemProps[] = [

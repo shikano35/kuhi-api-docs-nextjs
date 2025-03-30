@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "../styles/globals.scss";
 import { Layout } from "@/layouts";

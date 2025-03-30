@@ -2,6 +2,6 @@
 
 import { ErrorPage } from "@/layouts/Error";
 
-export default function Error() {
+export default function ErrorPageComponent() {
   return <ErrorPage />;
 }

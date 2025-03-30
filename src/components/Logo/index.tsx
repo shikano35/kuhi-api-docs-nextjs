@@ -1,4 +1,5 @@
-import Image, { ImageProps } from "next/image";
+import type { ImageProps } from "next/image";
+import Image from "next/image";
 import styles from "./index.module.scss";
 import clsx from "clsx";
 
