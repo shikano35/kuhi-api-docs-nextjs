@@ -14,6 +14,8 @@
     "test": "vitest",
     "sb": "storybook dev -p 6006",
     "build:sb": "storybook build",
+    "generate": "drizzle-kit generate --config ./drizzle/drizzle.config.ts",
+    "migrate": "drizzle-kit migrate --config ./drizzle/drizzle.config.ts",
     "build:worker": "opennextjs-cloudflare",
     "dev:worker": "wrangler dev --port 8771",
     "preview:worker": "pnpm run build:worker && pnpm run dev:worker",
