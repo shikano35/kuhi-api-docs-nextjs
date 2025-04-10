@@ -26,7 +26,7 @@ export function Footer() {
           </Link>
           <p>句碑の情報を提供するAPI</p>
           <small className={styles.footer__copyright}>
-            &copy; {currentYear} shikano
+            &copy; {currentYear} takemura
           </small>
         </section>
         <nav className={styles.footer__navlist} aria-label="Footer Navigation">

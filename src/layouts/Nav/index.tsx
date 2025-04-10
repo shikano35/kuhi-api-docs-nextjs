@@ -1,6 +1,7 @@
 import type { NavItemProps } from "./NavItem";
 import { NavItem } from "./NavItem";
 import styles from "./index.module.scss";
+import { Button } from "@/components/Button";
 
 export const navItems: NavItemProps[] = [
   {
@@ -18,11 +19,6 @@ export const navItems: NavItemProps[] = [
     label: "変更履歴",
     href: "#changelog",
   },
-  // {
-  //   title: "Example",
-  //   label: "使用例",
-  //   href: "#example",
-  // },
 ];
 
 export function NavList() {
@@ -35,6 +31,7 @@ export function NavList() {
           </li>
         ))}
       </ul>
+      <Button />
     </nav>
   );
 }
