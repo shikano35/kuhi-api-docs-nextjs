@@ -1,6 +1,7 @@
 import type { NavItemProps } from "./NavItem";
 import { NavItem } from "./NavItem";
 import styles from "./index.module.scss";
+import { Button } from "@/components/Button";
 
 export const navItems: NavItemProps[] = [
   {
@@ -35,6 +36,7 @@ export function NavList() {
           </li>
         ))}
       </ul>
+      <Button />
     </nav>
   );
 }

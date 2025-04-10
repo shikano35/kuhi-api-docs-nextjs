@@ -3,6 +3,8 @@
 .navlist {  
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-between;
   background-color: $background;
   border-bottom: 1px solid $border;
   margin: 0;

@@ -1,0 +1,26 @@
+@use "@/styles/index" as *;
+
+.button {
+  margin: 0.25rem 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: semibold;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+  font-weight: normal;
+  background-color: $muted-foreground;
+  color: $background;
+
+  &:hover {
+    color: $muted-foreground;
+    background-color: $background;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  @include media(md) {
+    font-size: 0.875rem;
+  }
+}
