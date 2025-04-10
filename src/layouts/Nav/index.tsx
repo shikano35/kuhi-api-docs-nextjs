@@ -19,11 +19,6 @@ export const navItems: NavItemProps[] = [
     label: "変更履歴",
     href: "#changelog",
   },
-  // {
-  //   title: "Example",
-  //   label: "使用例",
-  //   href: "#example",
-  // },
 ];
 
 export function NavList() {

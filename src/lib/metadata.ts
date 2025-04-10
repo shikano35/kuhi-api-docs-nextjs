@@ -4,7 +4,7 @@ export const baseMetadata: Metadata = {
   title: "句碑API",
   description: "句碑の情報をAPIとして提供します。",
   keywords: "句碑API, HaikuMonument-Api, haiku-monument, kuhi-api, kuhi, 句碑",
-  authors: [{ name: "shikano", url: "https://developers.kuhiapi.com" }],
+  authors: [{ name: "takemura", url: "https://developers.kuhiapi.com" }],
   generator: "Kuhi API",
   applicationName: "句碑API",
   openGraph: {
@@ -28,6 +28,6 @@ export const baseMetadata: Metadata = {
     title: "句碑API",
     description: "句碑の情報をAPIとして提供します。",
     images: [""],
-    creator: "shikano",
+    creator: "takemura",
   },
 };
