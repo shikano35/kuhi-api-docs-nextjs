@@ -22,47 +22,48 @@
     "deploy:worker": "pnpm run build:worker && wrangler deploy"
   },
   "dependencies": {
-    "@auth/drizzle-adapter": "^1.8.0",
+    "@auth/drizzle-adapter": "^1.10.0",
     "@heroicons/react": "^2.2.0",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.41.0",
     "next": "15.1.7",
     "next-auth": "5.0.0-beta.25",
-    "postgres": "^3.4.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "postgres": "^3.4.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@chromatic-com/storybook": "^3.2.4",
-    "@opennextjs/cloudflare": "^0.5.3",
-    "@storybook/addon-essentials": "^8.5.8",
-    "@storybook/addon-interactions": "^8.5.8",
-    "@storybook/addon-links": "^8.5.8",
-    "@storybook/addon-onboarding": "^8.5.8",
-    "@storybook/blocks": "^8.5.8",
-    "@storybook/nextjs": "^8.5.8",
-    "@storybook/react": "^8.5.8",
-    "@storybook/test": "^8.5.8",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
+    "@chromatic-com/storybook": "^3.2.7",
+    "@opennextjs/cloudflare": "^0.5.12",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/nextjs": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^20.19.10",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
     "drizzle-kit": "^0.30.6",
     "husky": "^9.1.7",
-    "jsdom": "^26.0.0",
-    "lint-staged": "^15.4.3",
-    "sass": "^1.85.0",
-    "storybook": "^8.5.8",
-    "typescript": "^5",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^15.5.2",
+    "sass": "^1.90.0",
+    "storybook": "^8.6.14",
+    "typescript": "^5.9.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.6"
+    "vitest": "^3.2.4"
   },
   "lint-staged": {
     "**.{ts|tsx|json|scss}": [
       "biome check --write"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808"
 }
